@@ -88,22 +88,22 @@ onMounted(() => {
   <div class="bg-gray-700 text-white text-center min-h-screen flex flex-col">
     <header>
       <h1
-        class="text-3xl sm:text-xl md:text-3xl lg:text-6xl font-extrabold cursor-pointer text-gray-50 opacity-30 hover:opacity-90 transition duration-200 py-8 sm:py-10 md:py-12 lg:py-20 hover:text-white">
-        Rock Paper Scissor
+        class="text-xl md:text-4xl font-extrabold cursor-pointer text-gray-50  transition duration-200 mt-20 hover:text-white">
+        Rock 🪨 Paper 📃 Scissor✂️
       </h1>
     </header>
-    <main class="container mx-auto flex-1 lg:mt-20 mt-10">
+    <main class="container mx-auto flex-1 md:mt-20 mt-10">
       <div v-if="choice === null" class="flex items-center justify-center">
         <button @click="play('rock')"
-          class="bg-white rounded-full shadow-lg w-64 p-2 mx-6 transition-colors duration-300 hover:bg-orange-300">
+          class="bg-white rounded-full shadow-lg w-40 p-2 mx-6 transition-colors duration-300 hover:bg-orange-300">
           <img src="./assets/rock.svg" alt="Rock" srcset="" />
         </button>
         <button @click="play('paper')"
-          class="bg-white rounded-full shadow-lg w-64 p-2 mx-6 transition-colors duration-300 hover:bg-green-400">
+          class="bg-white rounded-full shadow-lg w-40 p-2 mx-6 transition-colors duration-300 hover:bg-green-400">
           <img src="./assets/paper.svg" alt="paper" srcset="" />
         </button>
         <button @click="play('scissors')"
-          class="bg-white rounded-full shadow-lg w-64 p-2 mx-6 transition-colors duration-300 hover:bg-orange-500">
+          class="bg-white rounded-full shadow-lg w-40 p-2 mx-6 transition-colors duration-300 hover:bg-orange-500">
           <img src="./assets/scissor.svg" alt="scissors" srcset="" />
         </button>
       </div>
