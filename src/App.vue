@@ -44,13 +44,13 @@ const play = (c) => {
 
   if (outcome === "win") {
     wins.value++;
-    verdict.value = "You win!";
+    verdict.value = "You Win!";
   } else if (outcome === "loss") {
     losses.value++;
-    verdict.value = "You looses!";
+    verdict.value = "You Loose!";
   } else {
     draws.value++;
-    verdict.value = "It is a draw!";
+    verdict.value = "It's a Draw!";
   }
   SaveGame();
 };
@@ -108,20 +108,20 @@ onMounted(() => {
         </button>
       </div>
       <div v-else>
-        <div class="text-3xl mb-4">
+        <div class="text-2xl mb-4">
           You Picked: <span class="text-green-500 font-bold capitalize">'{{choice}}'</span>
         </div>
-        <div class="text-3xl mb-4">
+        <div class="text-2xl mb-4">
           Computer Picked: <span class="text-red-500 font-bold capitalize">'{{computerChoice}}'</span>
         </div>
-        <div class="text-6xl font-bold text-blue-500 mb-12">
+        <div class="text-4xl font-extrabold text-blue-500 mb-12">
           {{verdict}}
         </div>
         <button @click="ResetRound" class="bg-pink-500 rounded text-lg py-4 px-10 hover:opacity-80">Reset</button>
       </div>
 
       <!-- Win Draw Loss Table -->
-      <div class=" flex justify-center mx-auto py-20">
+      <div class=" flex justify-center mx-auto py-8">
         <div class="flex flex-col">
           <div class="w-full">
             <div class="border-b border-gray-200 shadow">
@@ -171,7 +171,7 @@ onMounted(() => {
 
 
       <!-- Percentage -->
-      <div class="text-xl sm:text-xl md:text-3xl lg:text-6xl font-extrabold text-green-500">
+      <div class="text-xl sm:text-xl md:text-3xl lg:text-5xl font-extrabold text-green-500">
         Win Rate: <span class="text-white">{{Math.round(winPercentage)}}%</span>
       </div>
       <!--End Percentage -->
