@@ -85,7 +85,7 @@ onMounted(() => {
 </script>
 
 <template class="overflow-hidden">
-  <div class="bg-gray-700 text-white text-center min-h-screen flex flex-col">
+  <div class="bg-black text-white text-center min-h-screen flex flex-col">
     <header>
       <h1
         class="text-xl md:text-4xl font-extrabold cursor-pointer text-gray-50  transition duration-200 mt-20 hover:text-white">
